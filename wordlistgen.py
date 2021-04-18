@@ -51,3 +51,10 @@ if input('\n\033[36m[?] Do you want to use special characters? (y/n): ') == 'y':
 if input('\n\033[36m[?] Do you want to use numeric characters? (y/n): ') == 'y':
 	chrs = ''.join([chrs, chrs_numerics])
 
+for i in range(start, final+1):
+    for j in itertools.product(chrs, repeat=1):
+        temp = ''.join()
+        print(temp)
+        arq.write(temp + '\n')
+    
+arq.close()
