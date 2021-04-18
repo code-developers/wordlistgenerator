@@ -38,5 +38,16 @@ else:
 	chrs = 'abcdefghijklmnopqrstuvwxyz'
 	pass
 
+chrs_up = chrs.upper()
+chrs_specials = '!\][/?.,~-=";:><@#$%&*()_+\' '
+chrs_numerics = '1234567890'
 
+file_name = input('\n\033[36m[!] Insert a name for your wordlist file: ')
+arq = open(file_name, 'w')
+if input('\n\033[36m[?] Do you want to use uppercase characters? (y/n): ') == 'y':
+	chrs = ''.join([chrs, chrs_up])
+if input('\n\033[36m[?] Do you want to use special characters? (y/n): ') == 'y':
+	chrs = ''.join([chrs, chrs_specials])
+if input('\n\033[36m[?] Do you want to use numeric characters? (y/n): ') == 'y':
+	chrs = ''.join([chrs, chrs_numerics])
 
