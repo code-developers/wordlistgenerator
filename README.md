@@ -8,3 +8,6 @@ A simple python script for creating wordlists
 - cd wordlistgenerator
 - sudo chmod +x *
 - python3 wordlistgen.py 
+
+# Reference
+<img src=>
